@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  spalsh:
+    image: scrapinghub/splash
+    ports:
+      - target: 8050
+        published: 8050
+        protocol: tcp
+          
+    deploy:
+      mode: replicated
+      replicas: 1
